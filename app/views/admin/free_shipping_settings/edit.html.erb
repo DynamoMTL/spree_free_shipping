@@ -1,0 +1,19 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1>Free Shipping Settings</h1>
+
+<% form_tag(admin_free_shipping_settings_path, :method => :put) do -%>
+
+  <p>
+    <label>Free shipping after this amount added to cart:</label><br />
+    <%= text_field_tag('preferences[free_shipping_amount]', Spree::Config[:free_shipping_amount], :maxlength => 10)%>
+    <br/>
+  </p>
+  
+ 
+
+  <p class="form-buttons">
+    <%= button t('update') %>
+  </p>
+
+<% end -%>

@@ -1,0 +1,7 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1>Free Shipping Settings</h1>
+
+<h4>Free shipping for all orders over: <%=  Spree::Config[:free_shipping_amount] %> </h4>
+
+<%= link_to_with_icon 'edit', t("edit"), edit_admin_free_shipping_settings_path %>
