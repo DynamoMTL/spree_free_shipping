@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_free_shipping'
-  s.version     = '0.60.1'
+  s.version     = '0.60.2'
   s.summary     = 'Add free shipping to your Spree store'
   s.required_ruby_version = '>= 1.8.7'
 
